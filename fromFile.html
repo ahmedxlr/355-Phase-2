@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>From File</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!------------------CSS code for styling ----------------------------------------------------------------------->
+    <style>
+        #a {
+            display: none;
+        }
+
+        #btnDownload {
+            display: none;
+        }
+
+        #ddlFormat {
+            display: none;
+        }
+
+        div.result {
+            margin: auto;
+            width: 50%;
+            border: 3px solid rgb(8, 8, 8);
+            padding: 10px;
+        }
+    </style>
+    <!--------------------------------------------------------------------------------------------------------------->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="form-group">
+            <div class="row">
+                <!--Button to get the file form the user------------------------------------------->
+                <div class="col-md-4"> <input type="file" name="btnBrowse" id="btnBrowse" onchange="read(this)"> </div>
+                <!---drop down to see what to convert the file to -------------------------------->
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <select id="ddlFormat" class="form-control">
+                                <option value="CSV">CSV</option>
+                                <option value="JSON">JSON</option>
+                                <option value="XML">XML</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            Save As: <input type="text" id="input1" />
+                            <!---------------------------------------------------------------------------------------->
+                            <!---button to downlaod the file---------------------------------------------------------->
+                            <button class="btn btn-primary"
+                                onclick="downloadResults(document.getElementById('input1').value)"
+                                id="btnDownload">Download</button>
+                            <!---------------------------------------------------------------------------------------->
+                            <!--------------------button to select all-------------------------------------------------------------------->
+                            <button type="button" id='check_all'>Select All</button>
+                            <!---------------------------------------------------------------------------------------->
+                            <!--------------button to deselev=ct all-------------------------------------------------------------------------->
+                            <button type="button" id='uncheck_all'>Deselect All</button>
+                        </div>
+                        <!---------------------------------------------------------------------------------------->
+                        <!-----------to actually downlaod----------------------------------------------------------------------------->
+                        <a href="" id="a" download onclick="hideLink()">Click here to download your file</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <section id="search-results">
+            <div class="results"> </div>
+        </section>
+    </div>
+ 
+    <script src="download.js" charset="utf-8"></script>
+</body>
+
+</html>

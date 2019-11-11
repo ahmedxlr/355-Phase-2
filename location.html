@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <body>
+            <h1>This is the Location page</h1>
+            <p id="demo"></p>
+        <script>
+            var href = window.location.href;
+            var hostName = window.location.hostname;
+            var pathName = window.location.pathname;
+            var protocol = window.location.protocol;
+            var x = document.getElementById("demo").innerHTML =
+                "Location href is = " + href + "<br>" +
+                "Location hostName is = " + hostName + "<br>" +
+                "Location pathName is = " + pathName + "<br>" +
+                "Location protocol is = " + protocol + "<br>" +
+                "." 
+        </script>
+        
+        
+    </body>
+</html>

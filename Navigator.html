@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <body>
+        <h1>This is the Navigator page</h1>
+        <p id="demo"></p>
+
+        <script>
+            var an= navigator.appName;
+            var np= navigator.product;
+            var av= navigator.appVersion;
+            var ua= navigator.userAgent;
+            var pf= navigator.platform;
+            var l= navigator.language;
+            var x = document.getElementById("demo").innerHTML =
+                "Navigator appName is = " + an + "<br>" +
+                "Navigator product is = " + np + "<br>" +
+                "Navigator appVersion is = " + av + "<br>" +
+                "Navigator userAgent is = " + ua + "<br>" +
+                "Navigator platform is = " + pf + "<br>" +
+                "Navigator language is = " + l + "<br>" +    
+                "."    
+        </script>
+    </body>
+</html>
