@@ -1,3 +1,5 @@
+// downloas js file
+
 function downloadResults(ext) {
   var s;
   var formatToDownload = $("#ddlFormat option:selected").text();
