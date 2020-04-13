@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CS 355 Home Page</title>
+            <meta charset="UTF-8">
+        <!-- using viewport here-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--using jQuery so we can use bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!--this is boot strap for java script-->    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!--this is boot strap for css-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--this is calling the custom style from the custom.css file-->
+        <link rel="stylesheet" href="custom.css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+     <body>
+            <div class="jumbotron" style="margin-bottom:0px;">
+                <h1>This is my home page for CS 355</h1>
+            </div>
+            <!--to create the basic Navber and all its elements-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+                <!--to create the 3 line button so whenn you miinimize the screen less then half or mobile it will make the 3 line menue appear-->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="collapse_target">
+                <ul class="navbar-nav">
+                    <!--This is for the COURSE MENU------------------------------------------------------------------------------------------------------------------------------------------->   
+                    <li class="nav-link dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" 
+                        href="#">Course Menu
+                        </a> 
+                        <span class="caret"></span> 
+                            <div class= "dropdown-menu" aria-labelledby="dropdown_target">
+                                <a href="https://www.zybooks.com" target="_blank" class= "dropdown-item">Zybook</a>
+                                    <div class="dropdown-divider"></div>
+                                <a href="https://tophat.com" target="_blank" class= "dropdown-item">TopHat</a> 
+                                    <div class="dropdown-divider"></div>
+                                <a href="https://drive.google.com/drive/folders/1AsHhIFfQ3yNE_m2z4wswRfKh77K0UH9w" target="_blank" class="dropdown-item">Course Google Drive</a> 
+                                    <div class="dropdown-divider"></div>
+                                <a href="https://www.w3schools.com" target="_blank" class="dropdown-item">W3Schools</a>
+                            </div>
+                    </li>
+                    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                       <!--This is for the SEARCH MENU------------------------------------------------------------------------------------------------------------------------------------------->
+                       <li class="nav-link dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target"
+                        href="#">Serch Menu
+                        </a>
+                        <span class="caret"></span>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-target">
+                                <a href="fromFile.html" target="_blank" class="dropdown-item">From File</a>
+                                    <div class="dropdown-divider"></div>
+                                <a href="P4.html" target="_blank" class="dropdown-item">Googel API</a>
+                    </li>
+                    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                    <!--This is for the ABOUT MENU------------------------------------------------------------------------------------------------------------------------------------------->
+                    <li class="nav-link dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target"
+                        href="#">About Menu
+                        </a>
+                        <span class="caret"></span>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-target">
+                                <a href="Developers.html" target="_blank" class="dropdown-item">Developers</a>
+                                    <div class="dropdown-divider"></div>
+                                <a href="ContactUs.html" target="_blank" class="dropdown-item">Contact Us</a>
+                    </li>
+                    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                    <!--This is for the BROWSER MENU----------------------------------------------------------------------------------------------------------------------------------------->
+                    <li class="nav-link dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target"
+                        href="#">Browser Menu
+                        </a>
+                        <span class="caret"></span>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-target">
+                                <a href="Navigator.html" target="_blank" class="dropdown-item">Navigator</a>
+                                    <div class="dropdown-divider"></div>
+                                <a href="Window.html" target="_blank" class="dropdown-item">Window</a>
+                                    <div class="dropdown-divider"></div>
+                                <a href="Screen.html" target="_blank" class="dropdown-item">Screen</a>
+                                    <div class="dropdown-divider"></div>
+                                <a href="location.html" target= "_blank" class="dropdown-item">Location</a>
+                                    <div class="dropdown-divider"></div>
+                                <a href="Geolocation.html" target="_blank" class="dropdown-item">Geolocation</a>
+                            </div>
+                    </li>
+<<<<<<< HEAD
+                    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                    <!--This is for the 370 GAME MENU------------------------------------------------------------------------------------------------------------------------------------------->
+                    <li class="nav-link dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target"
+                        href="#">370 Game 
+                        </a>
+                        <span class="caret"></span>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-target">
+                                <a href="GAME.html" target="_blank" class="dropdown-item">370 Project 1</a>
+                                    <div class="dropdown-divider"></div>
+                                
+                    </li>
+=======
+>>>>>>> upstream/master
+                </ul>
+            </div>
+        </nav>
+            <img src="https://clevertechie.com/img/bootstrap-4-navbar-cheat-sheet.png" class="img-fluid">
+    </body>
+</html>
