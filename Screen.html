@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is the Screen page</h1>
+    <p id="demo"></p>
+    <script>
+
+            var w= screen.width;
+            var h= screen.height;
+            var aw= screen.availWidth;
+            var ah= screen.availHeight;
+            var cd= screen.colorDepth;
+            var pd= screen.pixelDepth;
+            var x = document.getElementById("demo");
+            x.innerHTML = "Screen Width: "  + w + "<br>" + 
+                          "Screen Height: " + h + "<br>" +
+                          "Screen Avaliable Width: " + aw + "<br>" +
+                          "Screen Avaliable Height: "+ ah + "<br>" +
+                          "Screen Color Depth: "+ cd + "<br>" +
+                          "Screen Pixel Depth: "+ pd + "."
+        
+    </script>
+</body>
+</html>

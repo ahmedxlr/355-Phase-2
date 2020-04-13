@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>Phase 4: Google API Results</title>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="res.js"></script>
+  <!-- <script src="writefunctions.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="nstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <form id="searchbar" onscroll="fixToTop()" class="example" action="javascript:void(0);">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  <div class="results">
+  </div>
+  <div class="selectors">
+    <button type="button" id='check_all'>Select All</button>
+    <button type="button" id='uncheck_all'>Deselect All</button>
+  </div>
+  <div class="save">
+     Save As: <input type="text" id="input1" />
+    <button class="btn btn-primary" onclick="downloadResults(document.getElementById('input1').value)"
+      id="btnDownload">Download</button>
+    <a href="" id="a" download onclick="hideLink()">Click here to download your file</a>
+
+    <select id="ddlFormat" class="form-control">
+      <option value="CSV">CSV</option>
+      <option value="JSON">JSON</option>
+      <option value="XML">XML</option>
+    </select>
+    <a style="display: none; width: fit-content;" href="" id="a" download>Download file</a>
+  </div>
+
+  <script src="writefunctions.js" charset="utf-8"></script>
+
+</body>
+
+</html>
